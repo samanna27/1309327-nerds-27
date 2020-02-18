@@ -69,7 +69,6 @@
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-        <aside>
           <img src="img/nerds-picture.png" width="360px" height="208px" >
           <p>с 2004 года Любим точность во всем:</p>
           <table>
@@ -84,7 +83,6 @@
               <td>Минимальная предоплата</td>
             </tr>
           </table>
-        </aside>
         <div>
           <ul>
             <li><a href="#">Академия</a></li>
@@ -98,15 +96,32 @@
         <h2>Адреса</h2>
         <img src="#" alt="Карта">
         <img src="#" alt="Наш маячок">
-        <article>
-          <h3>Контакты</h3>
-          <p>NЁRDS DESIGN STUDIO></p>
+        <div>
+          <p>NЁRDS DESIGN STUDIO</p>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8<br>
             тел. +7 (812) 275-75-75</p>
           <a href="#">Напишите нам</a>
-        </article>
+        </div>
         <!--здесь будет форма-->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <div>
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+          <label for="letter">Текст письма:</label>
+          <textarea name="letter" id="letter" rows="4" placeholder="В свободной форме"></textarea>
+        </fieldset>
+        <div class="button">
+          <input type="submit" value="Отправить">
+        </div>
+      </form>
       </section>
     </main>
     <footer>
