@@ -32,7 +32,8 @@
       <h1>Страница магазина приложений и сайтов</h1>
       <!--Здесь будет форма-->
       <form action="#" method="get">
-        <p>Сетка:</p>
+        <div>
+          <p>Сетка:</p>
         <label>
           <input type="radio" name="Net" value="Adaptive" checked>Адаптивная;
         </label>
@@ -44,6 +45,21 @@
         <label>
           <input type="radio" name="Net" value="Rubber">Резиновая;
         </label>
+      </div>
+      <div>
+        <p>Особенности:</p>
+        <input type="checkbox" checked name="spider" id="spider-field">
+        <label for="spider-field">Спайдер</label><br>
+        <input type="checkbox" name="benefits" id="benefits-field">
+        <label for="benefits-field">Блок преимуществ</label><br>
+        <input type="checkbox" checked name="news" id="news-field">
+        <label for="news-field">Новости</label><br>
+        <input type="checkbox" name="gallery" id="gallery-field">
+        <label for="news-field">Галерея</label><br>
+        <input type="checkbox" name="basket" id="basket-field">
+        <label for="basket-field">Корзина</label><br>
+      </div>
+      <input type="submit" value="Показать">
       </form>
       <section>
         <h2>Магазин готовых шаблонов</h2>
