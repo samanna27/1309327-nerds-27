@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -10,7 +12,7 @@
       <a href="index.html">
         <img src="img/nerds-logo.svg" width="160px" height="65px" alt="logo">
       </a>
-      <nav>
+      <nav class="main-navigation">
         <ul>
           <li>
             <a href="index.html">Студия</a>
@@ -30,17 +32,16 @@
     </header>
     <main>
       <h1>Страница магазина приложений и сайтов</h1>
-      <form action="#" method="get">
+        <h2 class="shop">Магазин готовых шаблонов</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Сетка:</legend>
           <label>
             <input type="radio" name="Net" value="Adaptive" checked>Адаптивная;
           </label>
-          <br>
           <label>
             <input type="radio" name="Net" value="Fixed">Фиксированная;
           </label>
-          <br>
           <label>
             <input type="radio" name="Net" value="Rubber">Резиновая;
           </label>
@@ -48,21 +49,20 @@
         <fieldset>
           <legend>Особенности:</legend>
           <input type="checkbox" checked name="spider" id="spider-field">
-          <label for="spider-field">Спайдер</label><br>
+          <label for="spider-field">Спайдер</label>
           <input type="checkbox" name="benefits" id="benefits-field">
-          <label for="benefits-field">Блок преимуществ</label><br>
+          <label for="benefits-field">Блок преимуществ</label>
           <input type="checkbox" checked name="news" id="news-field">
-          <label for="news-field">Новости</label><br>
+          <label for="news-field">Новости</label>
           <input type="checkbox" name="gallery" id="gallery-field">
-          <label for="news-field">Галерея</label><br>
+          <label for="news-field">Галерея</label>
           <input type="checkbox" name="basket" id="basket-field">
-          <label for="basket-field">Корзина</label><br>
+          <label for="basket-field">Корзина</label>
         </fieldset>
         <input type="submit" value="Показать">
       </form>
       <section>
-        <h2>Магазин готовых шаблонов</h2>
-        <ul>
+        <ul class="services-list">
           <li>
            <img src="img/browser.svg" width="360px" height="40px">
            <img src="img/img-sedona-jpg.jpg" width="360px" height="576px" alt="Картинка сайта для туристов">
@@ -138,7 +138,7 @@
             тел. +7 (812) 275-75-75</p>
           <a href="#">Напишите нам</a>
         </div>
-        <form action="#" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>Напишите нам</p>
           <div>
             <label for="name">Ваше имя:</label>
@@ -156,7 +156,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <ul>
         <li>
           <a href="#">Вконтакте</a>
