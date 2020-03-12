@@ -83,7 +83,42 @@ h1,
   text-transform: uppercase;
 }
 
+.item1::before{
+  display: flex;
+  content: "";
+  width: 300px;
+  height: 146px;
+  background-image: url(../img/advantage-picture-red.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item2::before{
+  display: flex;
+  content: "";
+  width: 300px;
+  height: 146px;
+  background-image: url(../img/advantage-picture-green.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item3::before{
+  display: flex;
+  content: "";
+  width: 300px;
+  height: 146px;
+  background-image: url(../img/advantage-picture-yellow.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .button2{
+  width: 160px;
+  height: 50px;
   vertical-align: middle;
   background-color: #fb565a;
 }
@@ -99,6 +134,8 @@ h1,
 }
 
 .button3{
+  width: 160px;
+  height: 50px;
   vertical-align: middle;
   background-color: #00ca74;
 }
@@ -114,6 +151,8 @@ h1,
 }
 
 .button4{
+  width: 160px;
+  height: 50px;
   vertical-align: middle;
   background-color: #efc84a;
 }
@@ -126,6 +165,117 @@ h1,
 .button4:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
+}
+
+.Vk{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/vk-icon.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+}
+
+.Vk:hover,
+.Vk:focus{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/vk-icon_focus.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e74246;
+  border-radius: 40px;
+}
+
+.Vk:active{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/vk-icon_active.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d7373b;
+  border-radius: 40px;
+}
+
+.Fb{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/fb-icon.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+}
+
+.Fb:hover,
+.Fb:focus{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/fb-icon_focus.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e74246;
+  border-radius: 40px;
+}
+
+.Fb:active{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/fb-icon_active.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d7373b;
+  border-radius: 40px;
+}
+
+.Insta{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/insta-icon.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+}
+
+.Insta:hover,
+.Insta:focus{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/insta-icon_focus.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e74246;
+  border-radius: 40px;
+}
+
+.Insta:active{
+  display: flex;
+  width: 79px;
+  height: 79px;
+  background-image: url(../img/insta-icon_active.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #d7373b;
+  border-radius: 40px;
 }
 
 .main-footer li{
@@ -158,4 +308,44 @@ h1,
 
 .services-list li{
   list-style: none;
+}
+
+.grid,
+.features{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.checkbox{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  color: #283136;
+}
+
+.show-btn{
+  font-size: 16px;
+  line-height: 18px;;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  width: 260px;
+  height: 50px;
+  vertical-align: left;
+  background-color: #eeeeee;
+}
+
+.show-btn:hover,
+.show-btn:focus{
+  background-color: #dfdfdf;
+}
+
+.show-btn:active{
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
 }
