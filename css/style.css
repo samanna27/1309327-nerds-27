@@ -16,7 +16,7 @@ a{
 }
 
 a.logo{
-  background: url("img/nerds-logo.svg");
+  background: url("../img/nerds-logo.svg");
   display: block;
   height: 65px;
   width: 160px;
@@ -24,14 +24,16 @@ a.logo{
 
 a.logo:hover,
 a.logo:focus{
-  background: url("img/nerds-logo_focus.svg");
+  background: url("../img/nerds-logo_focus.svg");
+  pacity: 0.8;
   display: block;
   height: 65px;
   width: 160px;
 }
 
 a.logo:active{
-  background: url("img/nerds-logo_active.svg");
+  background: url("../img/nerds-logo_active.svg");
+  opacity: 0.3;
   display: block;
   height: 65px;
   width: 160px;
@@ -41,32 +43,47 @@ header{
   background-color: #eeeeee;
 }
 
-.main-navigation li{
+.menu li{
   line-height: 30px;
   text-transform: uppercase;
   list-style: none;
 }
 
 .menu:hover,
-.menu:focus{
+.cart:hover,
+.menu:focus,
+.cart:focus{
   color: #fb565a;
 }
 
-.menu:active{
+.menu:active,
+.cart:active{
   color: rgba(0, 0, 0, 0.3);
 }
 
-h1,
-.services{
-  display: none;
+.cart{
+  line-height: 30px;
+  text-transform: uppercase;
+  display: flex;
 }
 
-.service-item p{
-  color: #283136;
-  text-align: left;
+.cart::before{
+  display: flex;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/cart-icon.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  align-self: center;
 }
 
-.service-item h3{
+.visually-hidden{
+  visibility: hidden;
+}
+
+.service-item__title{
   font-family: inherit;
   font-size: 24px;
   font-weight: bold;
@@ -75,7 +92,12 @@ h1,
   text-transform: uppercase;
 }
 
-.service-item a{
+.service-item__text{
+  color: #283136;
+  text-align: left;
+}
+
+.service-item__btn{
   font-weight: 500;
   line-height: 18px;
   text-align: center;
@@ -83,7 +105,7 @@ h1,
   text-transform: uppercase;
 }
 
-.item1::before{
+.service-item--website::before{
   display: flex;
   content: "";
   width: 300px;
@@ -94,7 +116,7 @@ h1,
   background-position: top;
 }
 
-.item2::before{
+.service-item--app::before{
   display: flex;
   content: "";
   width: 300px;
@@ -105,7 +127,7 @@ h1,
   background-position: top;
 }
 
-.item3::before{
+.service-item--preza::before{
   display: flex;
   content: "";
   width: 300px;
@@ -116,59 +138,58 @@ h1,
   background-position: top;
 }
 
-.button2{
+.service-item__btn{
+  display: block;
   width: 160px;
   height: 50px;
   vertical-align: middle;
-  background-color: #fb565a;
 }
 
-.button2:hover,
-.button2:focus{
+.service-item__btn--website{
+    background-color: #fb565a;
+}
+
+.service-item__btn--website:hover,
+.service-item__btn--website:focus{
   background-color: #e74246;
 }
 
-.button2:active{
+.service-item__btn--website:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
 
-.button3{
-  width: 160px;
-  height: 50px;
-  vertical-align: middle;
+.service-item__btn--app{
   background-color: #00ca74;
 }
 
-.button3:hover,
-.button3:focus{
+.service-item__btn--app:hover,
+.service-item__btn--app:focus{
   background-color: #00bc6c;
 }
 
-.button3:active{
+.service-item__btn--app:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
 }
 
-.button4{
-  width: 160px;
-  height: 50px;
-  vertical-align: middle;
+.service-item__btn--preza{
   background-color: #efc84a;
 }
 
-.button4:hover,
-.button4:focus{
+.service-item__btn--preza:hover,
+.service-item__btn--preza:focus{
   background-color: #eab534;
 }
 
-.button4:active{
+.service-item__btn--preza:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
 }
 
 .Vk{
   display: flex;
+  color: transparent;
   width: 79px;
   height: 79px;
   background-image: url(../img/vk-icon.png);
@@ -206,6 +227,7 @@ h1,
 
 .Fb{
   display: flex;
+  color: transparent;
   width: 79px;
   height: 79px;
   background-image: url(../img/fb-icon.svg);
@@ -231,6 +253,7 @@ h1,
 
 .Fb:active{
   display: flex;
+  color: transparent;
   width: 79px;
   height: 79px;
   background-image: url(../img/fb-icon_active.png);
@@ -243,6 +266,7 @@ h1,
 
 .Insta{
   display: flex;
+  color: transparent;
   width: 79px;
   height: 79px;
   background-image: url(../img/insta-icon.png);
@@ -278,18 +302,18 @@ h1,
   border-radius: 40px;
 }
 
-.main-footer li{
+.footer__social-net{
   list-style: none;
 }
 
-.main-footer p{
+.footer__promo{
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
   text-align: left;
 }
 
-.main-footer span{
+.footer__promo span{
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
@@ -306,12 +330,23 @@ h1,
   background-color: #eeeeee;
 }
 
-.services-list li{
+.portfolio li{
   list-style: none;
 }
 
-.grid,
-.features{
+.portfolio-product::before{
+  display: block;
+  content: "";
+  width: 360px;
+  height: 40px;
+  background-image: url(../img/browser.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.filter-grid__title,
+.filter-features__title{
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -328,7 +363,7 @@ h1,
   color: #283136;
 }
 
-.show-btn{
+.filter-btn{
   font-size: 16px;
   line-height: 18px;;
   color: #000000;
@@ -340,12 +375,12 @@ h1,
   background-color: #eeeeee;
 }
 
-.show-btn:hover,
-.show-btn:focus{
+.filter-btn:hover,
+.filter-btn:focus{
   background-color: #dfdfdf;
 }
 
-.show-btn:active{
+.filter-btn:active{
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }

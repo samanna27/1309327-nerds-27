@@ -12,26 +12,26 @@
       <a class="logo" href="#">
         <img src="img/nerds-logo.svg" width="160px" height="65px" alt="logo">
       </a>
-      <nav class="main-navigation">
+      <nav class="menu">
         <ul>
           <li>
-            <a class="menu" href="#">Студия</a>
+            <a class="menu__item-aboutus" href="#">Студия</a>
           </li>
           <li>
-            <a class="menu" href="#">Клиенты</a>
+            <a class="menu__item-clients" href="#">Клиенты</a>
           </li>
           <li>
-            <a class="menu" href="catalog.html">Магазин</a>
+            <a class="menu__item-shop" href="catalog.html">Магазин</a>
           </li>
           <li>
-            <a class="menu" href="#">Контакты</a>
+            <a class="menu__item-contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a class="menu cart" href="#">Корзина</a>
+      <a class="cart" href="#">Корзина</a>
     </header>
     <main>
-      <h1>Основная страница</h1>
+      <h1 class="visually-hidden">Основная страница</h1>
       <section>
         <h2>Девиз</h2>
         <p>Долго, дорого,<br>скрупулезно.</p>
@@ -39,21 +39,21 @@
         <a class="learn-more" href="#">Узнать больше</a>
       </section>
       <section>
-        <h2 class="services">Услуги</h2>
-        <div class="service-item item1">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button2" href="#">Заказать</a>
+        <h2 class="services visually-hidden">Услуги</h2>
+        <div class="service-item service-item--website">
+          <h3 class="service-item__title">Веб-сайты</h3>
+          <p class="service-item__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="service-item__btn service-item__btn--website" href="#">Заказать</a>
         </div>
-        <div class="service-item item2">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button3" href="#">Заказать</a>
+        <div class="service-item service-item--app">
+          <h3 class="service-item__title">Приложения</h3>
+          <p class="service-item__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="service-item__btn service-item__btn--app" href="#">Заказать</a>
         </div>
-        <div class="service-item item3">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button4" href="#">Заказать</a>
+        <div class="service-item service-item--preza">
+          <h3 class="service-item__title">Презентации</h3>
+          <p class="service-item__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="service-item__btn service-item__btn--preza" href="#">Заказать</a>
         </div>
       </section>
       <section>
@@ -110,13 +110,13 @@
         <h2>Адреса</h2>
         <img src="img/map.png" alt="Карта" width="1440px" height="416px">
         <img src="img/map-marker.png" alt="Наш маячок" width="231px" height="190px">
-        <div>
+
           <p>NЁRDS DESIGN STUDIO</p>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8<br>
             тел. +7 (812) 275-75-75</p>
           <a href="#">Напишите нам</a>
-        </div>
+
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>Напишите нам</p>
           <div>
@@ -135,19 +135,19 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
       <ul>
-        <li>
-          <a class="Vk" href="#"></a>
+        <li class="footer__social-net">
+          <a class="Vk" href="#">Вконтакте</a>
         </li>
-        <li>
-          <a class="Fb" href="#"></a>
+        <li class="footer__social-net">
+          <a class="Fb" href="#">Фэйсбук</a>
         </li>
-        <li>
-          <a class="Insta" href="#"></a>
+        <li class="footer__social-net">
+          <a class="Insta" href="#">Инстаграмм</a>
         </li>
       </ul>
-      <p>
+      <p class="footer__promo">
         Давайте дружить, это выгодно!<br>
         <span>Скидка 10% для друзей из социальных сетей.</span>
       </p>

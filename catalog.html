@@ -12,30 +12,31 @@
       <a class="logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160px" height="65px" alt="logo">
       </a>
-      <nav class="main-navigation">
+      <nav class="menu">
         <ul>
           <li>
-            <a class="menu" href="index.html">Студия</a>
+            <a class="menu-item-aboutus" href="index.html">Студия</a>
           </li>
           <li>
-            <a class="menu" href="#">Клиенты</a>
+            <a class="menu-item-clients" href="#">Клиенты</a>
           </li>
           <li>
-            <a class="menu" href="#">Магазин</a>
+            <a class="menu-item-shop" href="catalog.html">Магазин</a>
           </li>
           <li>
-            <a class="menu" href="#">Контакты</a>
+            <a class="menu-item-contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a class="menu cart" href="#">Корзина</a>
+      <a class="cart" href="#">Корзина</a>
     </header>
     <main>
       <h1>Страница магазина приложений и сайтов</h1>
-        <h2 class="shop">Магазин готовых шаблонов</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend class="grid">Сетка:</legend>
+      <h2 class="shop">Магазин готовых шаблонов</h2>
+
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-grid">
+          <legend class="filter-grid__title">Сетка:</legend>
           <label>
             <input type="radio" name="Net" value="Adaptive" checked>Адаптивная;
           </label>
@@ -46,8 +47,8 @@
             <input type="radio" name="Net" value="Rubber">Резиновая;
           </label>
         </fieldset>
-        <fieldset>
-          <legend class="features">Особенности:</legend>
+        <fieldset class="filter-features">
+          <legend class="filter-features__title">Особенности:</legend>
           <input type="checkbox" checked name="spider" id="spider-field">
           <label for="spider-field">Спайдер</label>
           <input type="checkbox" name="benefits" id="benefits-field">
@@ -59,12 +60,11 @@
           <input type="checkbox" name="basket" id="basket-field">
           <label for="basket-field">Корзина</label>
         </fieldset>
-        <input class="show-btn" type="submit" value="Показать">
+        <input class="filter-btn" type="submit" value="Показать">
       </form>
       <section>
-        <ul class="services-list">
-          <li>
-           <img src="img/browser.svg" width="360px" height="40px">
+        <ul class="portfolio">
+          <li class="portfolio-product">
            <img src="img/img-sedona-jpg.jpg" width="360px" height="576px" alt="Картинка сайта для туристов">
            <div>
              <h3>Sedona</h3>
@@ -72,8 +72,7 @@
              <button type="button" name="Цена Sedona">9 900 руб.</button>
            </div>
           </li>
-          <li>
-           <img src="img/browser.svg" width="360px" height="40px">
+          <li class="portfolio-product">
            <img src="img/img-pink-jpg.jpg" width="360px" height="576px" alt="Картинка приложения Жизнь в розовом цвете">
            <div>
              <h3>Pink</h3>
@@ -81,8 +80,7 @@
              <button type="button" name="Цена Pink">10 000 руб.</button>
            </div>
           </li>
-          <li>
-            <img src="img/browser.svg" width="360px" height="40px">
+          <li class="portfolio-product">
             <img src="img/img-barbershop-jpg.jpg" width="360px" height="576px" alt="Картинка сайта Барбершоп">
             <div>
               <h3>Borodinski</h3>
@@ -90,8 +88,7 @@
               <button type="button" name="Цена Borodinski">10 000 руб.</button>
             </div>
           </li>
-          <li>
-           <img src="img/browser.svg" width="360px" height="40px">
+          <li class="portfolio-product">
            <img src="img/img-mishka-jpg.jpg" width="360px" height="576px" alt="Картинка сайта ручных работ для дома">
            <div>
              <h3>Mishka</h3>
@@ -99,8 +96,7 @@
              <button type="button" name="Цена Mishki">10 000 руб.</button>
            </div>
           </li>
-          <li>
-           <img src="img/browser.svg" width="360px" height="40px">
+          <li class="portfolio-product">
            <img src="img/img-aplus-jpg.jpg" width="360px" height="576px" alt="Картинка сайта обучения">
            <div>
              <h3>Учеба</h3>
@@ -108,8 +104,7 @@
              <button type="button" name="Цена Учеба">10 000 руб.</button>
            </div>
           </li>
-          <li>
-           <img src="img/browser.svg" width="360px" height="40px">
+          <li class="portfolio-product">
            <img src="img/img-kvast-jpg.jpg" width="360px" height="576px" alt="Картинка сайта крафтового кваса">
            <div>
              <h3>Кваст</h3>
@@ -156,19 +151,19 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
       <ul>
-        <li>
-          <a class="Vk" href="#"></a>
+        <li class="footer__social-net">
+          <a class="Vk" href="#">Вконтакте</a>
         </li>
-        <li>
-          <a class="Fb" href="#"></a>
+        <li class="footer__social-net">
+          <a class="Fb" href="#">Фэйсбук</a>
         </li>
-        <li>
-          <a class="Insta" href="#"></a>
+        <li class="footer__social-net">
+          <a class="Insta" href="#">Инстаграмм</a>
         </li>
       </ul>
-      <p>
+      <p class="footer__promo">
         Давайте дружить, это выгодно!<br>
         <span>Скидка 10% для друзей из социальных сетей.</span>
       </p>
